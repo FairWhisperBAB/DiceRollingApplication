@@ -17,10 +17,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        imageViewDice = findViewById(R.id.image_view_dice);
+        imageViewDice = findViewById(R.id.image_view_d20);
         imageViewDice.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
+            public void onClick(View v)
+            {
                 rollDice();
             }
         });
