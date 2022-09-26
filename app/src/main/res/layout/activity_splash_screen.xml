@@ -27,7 +27,7 @@
         android:id="@+id/textView6"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/moresplashscreen"
+        android:text="@string/more_splashscreen"
         android:textAlignment="center"
         android:textColor="#D59336"
         android:textSize="24sp"
