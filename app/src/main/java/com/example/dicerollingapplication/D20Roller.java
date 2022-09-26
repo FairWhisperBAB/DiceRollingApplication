@@ -2,6 +2,7 @@ package com.example.dicerollingapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -18,6 +19,8 @@ public class D20Roller extends AppCompatActivity {
     String EpicFail = "CRITICAL FAIL!! :(";
 
     private TextView roll;
+
+    public MediaPlayer SFX;
 
 
     @Override
@@ -46,11 +49,17 @@ public class D20Roller extends AppCompatActivity {
 
                 roll.setText(EpicFail);
 
+                SFX = MediaPlayer.create(D20Roller.this, R.raw.nat1);
+                SFX.start();
+
                 break;
             case 2:
                 imageViewDice.setImageResource(R.drawable.d20_2);
 
                 roll.setText(" ");
+
+                SFX = MediaPlayer.create(D20Roller.this, R.raw.roll2);
+                SFX.start();
 
                 break;
             case 3:
@@ -58,11 +67,17 @@ public class D20Roller extends AppCompatActivity {
 
                 roll.setText(" ");
 
+                SFX = MediaPlayer.create(D20Roller.this, R.raw.roll2);
+                SFX.start();
+
                 break;
             case 4:
                 imageViewDice.setImageResource(R.drawable.d20_4);
 
                 roll.setText(" ");
+
+                SFX = MediaPlayer.create(D20Roller.this, R.raw.roll2);
+                SFX.start();
 
                 break;
             case 5:
@@ -70,11 +85,17 @@ public class D20Roller extends AppCompatActivity {
 
                 roll.setText(" ");
 
+                SFX = MediaPlayer.create(D20Roller.this, R.raw.roll2);
+                SFX.start();
+
                 break;
             case 6:
                 imageViewDice.setImageResource(R.drawable.d20_6);
 
                 roll.setText(" ");
+
+                SFX = MediaPlayer.create(D20Roller.this, R.raw.roll2);
+                SFX.start();
 
                 break;
             case 7:
@@ -82,11 +103,17 @@ public class D20Roller extends AppCompatActivity {
 
                 roll.setText(" ");
 
+                SFX = MediaPlayer.create(D20Roller.this, R.raw.roll2);
+                SFX.start();
+
                 break;
             case 8:
                 imageViewDice.setImageResource(R.drawable.d20_8);
 
                 roll.setText(" ");
+
+                SFX = MediaPlayer.create(D20Roller.this, R.raw.roll2);
+                SFX.start();
 
                 break;
             case 9:
@@ -94,11 +121,17 @@ public class D20Roller extends AppCompatActivity {
 
                 roll.setText(" ");
 
+                SFX = MediaPlayer.create(D20Roller.this, R.raw.roll2);
+                SFX.start();
+
                 break;
             case 10:
                 imageViewDice.setImageResource(R.drawable.d20_10);
 
                 roll.setText(" ");
+
+                SFX = MediaPlayer.create(D20Roller.this, R.raw.roll2);
+                SFX.start();
 
                 break;
             case 11:
@@ -106,11 +139,17 @@ public class D20Roller extends AppCompatActivity {
 
                 roll.setText(" ");
 
+                SFX = MediaPlayer.create(D20Roller.this, R.raw.roll2);
+                SFX.start();
+
                 break;
             case 12:
                 imageViewDice.setImageResource(R.drawable.d20_12);
 
                 roll.setText(" ");
+
+                SFX = MediaPlayer.create(D20Roller.this, R.raw.roll2);
+                SFX.start();
 
                 break;
             case 13:
@@ -118,11 +157,17 @@ public class D20Roller extends AppCompatActivity {
 
                 roll.setText(" ");
 
+                SFX = MediaPlayer.create(D20Roller.this, R.raw.roll2);
+                SFX.start();
+
                 break;
             case 14:
                 imageViewDice.setImageResource(R.drawable.d20_14);
 
                 roll.setText(" ");
+
+                SFX = MediaPlayer.create(D20Roller.this, R.raw.roll2);
+                SFX.start();
 
                 break;
             case 15:
@@ -130,11 +175,17 @@ public class D20Roller extends AppCompatActivity {
 
                 roll.setText(" ");
 
+                SFX = MediaPlayer.create(D20Roller.this, R.raw.roll2);
+                SFX.start();
+
                 break;
             case 16:
                 imageViewDice.setImageResource(R.drawable.d20_16);
 
                 roll.setText(" ");
+
+                SFX = MediaPlayer.create(D20Roller.this, R.raw.roll2);
+                SFX.start();
 
                 break;
             case 17:
@@ -142,11 +193,17 @@ public class D20Roller extends AppCompatActivity {
 
                 roll.setText(" ");
 
+                SFX = MediaPlayer.create(D20Roller.this, R.raw.roll2);
+                SFX.start();
+
                 break;
             case 18:
                 imageViewDice.setImageResource(R.drawable.d20_18);
 
                 roll.setText(" ");
+
+                SFX = MediaPlayer.create(D20Roller.this, R.raw.roll2);
+                SFX.start();
 
                 break;
             case 19:
@@ -154,11 +211,17 @@ public class D20Roller extends AppCompatActivity {
 
                 roll.setText(" ");
 
+                SFX = MediaPlayer.create(D20Roller.this, R.raw.roll2);
+                SFX.start();
+
                 break;
             case 20:
                 imageViewDice.setImageResource(R.drawable.d20_20);
 
                 roll.setText(EpicWin);
+
+                SFX = MediaPlayer.create(D20Roller.this, R.raw.nat20);
+                SFX.start();
 
                 break;
         }

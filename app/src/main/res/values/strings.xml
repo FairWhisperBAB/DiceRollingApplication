@@ -4,4 +4,6 @@
     <string name="d20_button">Roll a D20</string>
     <string name="d20_critical_hit">CRITICAL HIT!! XD</string>
     <string name="d20_critical_fail">CRITICAL FAIL!! :(</string>
+    <string name="splashscreen_text">Dice Roller</string>
+    <string name="more_splashscreen"> (So you can be a nerd on the go)</string>
 </resources>
